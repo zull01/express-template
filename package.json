@@ -1,0 +1,45 @@
+{
+    "name": "your-app-name",
+    "version": "1.0.0",
+    "main": "dist/index.js",
+    "type": "commonjs",
+    "scripts": {
+        "start": "node dist/index.js",
+        "dev": "concurrently \"npx tsc -w\" \"nodemon dist/index.js\"",
+        "build": "concurrently \"rimraf dist\" \"tsc\"",
+        "lint": "npx eslint ./src",
+        "test": "jest",
+        "format": "prettier . --write",
+        "format:check": "prettier . --check"
+    },
+    "author": "Mohd Ali",
+    "license": "MIT",
+    "description": "Template for Building APIs based on NodeJS, Typescript and ExpressJS 'etc, Fully configured Ready-to-Use Template by Mohd Ali",
+    "devDependencies": {
+        "@eslint/js": "^9.12.0",
+        "@types/cors": "^2.8.17",
+        "@types/express": "^5.0.0",
+        "@types/jest": "^29.5.13",
+        "@types/node": "^22.7.5",
+        "@typescript-eslint/eslint-plugin": "^8.8.1",
+        "@typescript-eslint/parser": "^8.8.1",
+        "concurrently": "^9.0.1",
+        "eslint": "^9.12.0",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-prettier": "^5.2.1",
+        "globals": "^15.11.0",
+        "jest": "^29.7.0",
+        "nodemon": "^3.1.7",
+        "prettier": "^3.3.3",
+        "rimraf": "^6.0.1",
+        "ts-jest": "^29.2.5",
+        "typescript": "^5.6.3",
+        "typescript-eslint": "^8.8.1"
+    },
+    "dependencies": {
+        "cors": "^2.8.5",
+        "dotenv": "^16.4.5",
+        "express": "^4.21.1",
+        "helmet": "^8.0.0"
+    }
+}
